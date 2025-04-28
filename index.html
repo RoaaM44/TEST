@@ -1,0 +1,160 @@
+
+<DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page</title>
+    <!--link for icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--link for css external file-->
+    <link rel="stylesheet" href="styles.css">
+    
+
+    </head>
+<body>
+    <!--header section-->
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo" class="logo-img">
+        </div>
+        <nav class="nav-links">
+            <a href="#" class="active">Home</a>
+            <a href="#">About</a>
+            <a href="#">Menu</a>
+            <a href="Offers.html">Offers</a>
+            <a href="contact.html">Contact</a>
+            <a href="#">Reviews</a>
+        </nav>
+        <div class="header-right">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            <i class="fa-solid fa-cart-shopping cart-icon"></i>
+            <button class="btn-sign-in">sign in</button>
+        </div>
+    </header>
+
+    <!-- صندوق البحث -->
+    <div id="searchBox" class="popup-box" style="display:none;">
+        <input type="text" class="search-input" placeholder="Search here... 🔍">
+        <button class="close-btn" onclick="closeBox('searchBox')">Close</button>
+      </div>
+      
+      <!-- صندوق السلة -->
+      <div id="cartBox" class="popup-box" style="display:none;">
+        <h2>Your Cart 🛒</h2>
+        <p>No items in the cart yet!</p>
+        <button class="close-btn" onclick="closeBox('cartBox')">Close</button>
+      </div>
+  
+  <!-- صندوق تسجيل الدخول -->
+  <div id="loginBox" class="popup-box" style="display:none;">
+    <h2>Sign In 🔑</h2>
+    <input type="text" class="login-input" placeholder="Username">
+    <input type="password" class="login-input" placeholder="Password">
+    <button class="login-btn">Login</button>
+    <button class="close-btn" onclick="closeBox('loginBox')">Close</button>
+  </div>
+  
+    
+<!--main section-->
+        <section class="main-section">
+            <!--main-left sub section-->
+            <div class="main-left">
+                <h1 class="main-heading">
+                    Indulge in the Sweetest Moments with Our <span style="color:#859b87;">
+                       <br> Freshly Baked Delights</span>
+                  </h1>
+                  <p class="main-subheading">
+                    Freshly Baked Breads, Crafted Daily <br>
+                    Served with Love </p>
+             <div class="main-buttons">
+                <button class="explore-btn" onclick="location.href='Menu.html'">Explore Menu</button>
+                <button class="play-viedo-btn" id="watchVideoBtn">
+                    <i class="fa-solid fa-play"></i>
+                    Watch Video
+                </button>
+       <!-- نافذة الفيديو المنبثقة -->
+<div id="videoBox" class="popup-box" style="display:none;">
+    <div class="video-wrapper">
+        <video id="videoPlayer" controls>
+            <source src="C:/Users/iimu5/Desktop/Bread Basket.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <button class="close-btn" onclick="closeBox('videoBox')">Close</button>
+</div>
+</div>    
+             </div>
+            </div>
+                  <!--main-right subSection-->
+                  <div class="main-right">
+                  
+                  <div class="delevery-options">
+                  <div class="delevery-option">
+                    <i class="fa-solid fa-truck delivery-icon"></i>
+                  
+                    <div class="delivery-text">
+                        <h3> Freshly Baked Delivery 🥐</h3>
+                        Warm & Tasty — Straight From the Oven to Your Door
+                    </div>
+                    </div>
+                    <div class="delevery-option">
+                        <i class="fa-solid fa-box-open delivery-icon"></i>
+                        <div class="delivery-text">
+                            <h3>In-Store Pickup 🛍️ </h3>
+                            Your Favorite Pastries, Ready When You Are
+
+                        </div>
+                    </div>
+                    </div>
+                    </section>
+                      <!--carousel section-->
+
+                      <section class="carousel-container">
+                        <i class="fa-solid fa-chevron-left prev-arrow carousel-arrow"></i>
+                            <div class="carousel-inner">
+                                <div class="carousel-item bink-bg">
+                                    <img src="Cookies.jpg" alt="Cookies"
+                                     class="item-image">
+                                     <h2 class="item-title">Cookies</h2>
+                                     <p class="item-price">50 RS</p>
+                                     </div>
+                                     <div class="carousel-item green-bg">
+                                        <img src="French-Toast.jpg" alt="French Toast"
+                                         class="item-image">
+                                         <h2 class="item-title">French Toast</h2>
+                                         <p class="item-price">60 RS</p>
+                                         </div>
+
+                                         <div class="carousel-item blue-bg">
+                                            <img src="Croissants.jpg" alt="Croissants"
+                                             class="item-image">
+                                             <h2 class="item-title">Croissants</h2>
+                                             <p class="item-price">80 RS</p>
+                                             </div>
+
+                                             <div class="carousel-item red-bg">
+                                                <img src="Greek Frappe.jpg" alt="Greek Frappe"
+                                                 class="item-image">
+                                                 <h2 class="item-title">Greek Frappe</h2>
+                                                 <p class="item-price">100 RS</p>
+                                                 </div>
+
+                                                 <div class="carousel-item reen-bg">
+                                                    <img src="Iced black coffee.jpg" alt="black coffee"
+                                                     class="item-image">
+                                                     <h2 class="item-title">black coffee</h2>
+                                                     <p class="item-price">60 RS</p>
+                                                     </div>
+
+                                                     
+                            </div>
+                            <i class="fa-solid fa-chevron-right next-arrow carousel-arrow"></i>
+                      </section>
+                      
+                      
+                      <script src="styles.js"></script>
+                </body>
+                </html>
+                
